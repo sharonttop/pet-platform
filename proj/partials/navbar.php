@@ -16,7 +16,10 @@
                     <a class="nav-link" href="#">寵物店商</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">客戶資料</a>
+                    <a class="nav-link" href="customers-list.php">客戶資料</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer-insert.php">新增</a>
                 </li>
             </ul>
 
