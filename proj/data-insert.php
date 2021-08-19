@@ -157,6 +157,7 @@
                 .then(obj=>{
                     console.log(obj);
                     if(obj.success){
+                        alert ("註冊成功");
                         location.href = 'login.php';
                     } else {
                         alert(obj.error);

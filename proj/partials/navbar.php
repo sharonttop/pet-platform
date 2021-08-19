@@ -15,8 +15,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">寵物店商</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">客戶資料</a>
+                </li>
             </ul>
-         <!-- 要做樹狀圖------------------------------->  
+
 
             <ul class="navbar-nav">
                 <?php if(isset($_SESSION['user'])): ?>
