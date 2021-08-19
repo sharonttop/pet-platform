@@ -40,7 +40,7 @@
                         <a class="nav-link" href="login.php">登入</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">註冊</a>
+                        <a class="nav-link" href="data-insert.php">註冊</a>
                     </li>
                 <?php endif; ?>
             </ul>
