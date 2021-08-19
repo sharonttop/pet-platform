@@ -1,0 +1,1 @@
+INSERT INTO `members` (`id`, `avatar`, `email`, `password`, `mobile`, `address`, `birthday`, `hash`, `activated`, `nickname`, `create_at`) VALUES (NULL, NULL, 'sharon@.com', MD5('123456'), '0900974033', '新北市中正區233號五樓', '2013-08-01', NULL, NULL, '圈圈', '2021-08-16 13:21:50.000000');
