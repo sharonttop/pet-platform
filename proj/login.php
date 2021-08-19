@@ -14,7 +14,7 @@ $title = '登入';
     }
 </style>
 
-<div class="container d-flex justify-content-center">
+<div class="container">
 
     <div class="col-md-6">
         <div class="card">

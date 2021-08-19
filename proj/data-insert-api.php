@@ -10,12 +10,12 @@ $output = [
 ];
 
 // 避免錯誤拜訪
-if(! isset($_POST[''])){
-    $output['error'] = '沒有填資料';
-    $output['code'] = 400;
-    echo json_encode($output, JSON_UNESCAPED_UNICODE);
-    exit; 
-}
+// if(! isset($_POST[''])){
+//     $output['error'] = '沒有填資料';
+//     $output['code'] = 400;
+//     echo json_encode($output, JSON_UNESCAPED_UNICODE);
+//     exit; 
+// }
 
 
 if(mb_strlen($_POST['name'])<2){
@@ -34,7 +34,7 @@ if(! filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
 
 $sql = "INSERT INTO `members`( `name`, `nickname`, 
-        `email`, `password`, `mobile`, `address`, `birthday`, `create_at`)
+        `email`, `password`, `mobile`, `birthday`, `address`, `create_at`)
         VALUES (
         ?, ?, 
         ?, ?, ?, ?, ?, NOW()
@@ -48,8 +48,8 @@ $sql = "INSERT INTO `members`( `name`, `nickname`,
         $_POST['email'],
         $_POST['password'],
         $_POST['mobile'],
-        $_POST['address'],
         $_POST['birthday'],
+        $_POST['address'],
     ]);
     
     $output['rowCount'] = $stmt->rowCount(); // 新增的筆數

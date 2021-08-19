@@ -22,38 +22,38 @@
                     <form name="form1" onsubmit="checkForm(); return false;">
                     <div class="form-group">
                             <label for="name">姓名 *</label>
-                            <input type="text" class="form-control" id="name" name="name" value="<?=htmlentities($r['name']) ?>">
+                            <input type="text" class="form-control" id="name" name="name">
                             <small class="form-text "></small>
                         </div>
                         <div class="form-group">
                             <label for="nickname">暱稱 *</label>
-                            <input type="text" class="form-control" id="nickname" name="nickname" value="<?=htmlentities($r['nickname']) ?>">
+                            <input type="text" class="form-control" id="nickname" name="nickname">
                             <small class="form-text "></small>
                         </div>
                         <div class="form-group">
                             <label for="email">email (account) *</label>
-                            <input type="text" class="form-control" id="email" name="email" value="<?=htmlentities($r['email']) ?>">
+                            <input type="text" class="form-control" id="email" name="email">
                             <small class="form-text "></small>
                         </div>
                         <div class="form-group">
                             <label for="password">password *</label>
-                            <input type="text" class="form-control" id="password" name="password" value="<?=htmlentities($r['password']) ?>">
+                            <input type="text" class="form-control" id="password" name="password">
                             <small class="form-text "></small>
                         </div>
                         <div class="form-group">
                             <label for="mobile">mobile</label>
-                            <input type="text" class="form-control" id="mobile" name="mobile" value="<?=htmlentities($r['mobile']) ?>">
+                            <input type="text" class="form-control" id="mobile" name="mobile" >
                             <small class="form-text "></small>
                         </div>
                         <div class="form-group">
                             <label for="birthday">birthday</label>
-                            <input type="date" class="form-control" id="birthday" name="birthday" value="<?=htmlentities($r['birthday']) ?>">
+                            <input type="date" class="form-control" id="birthday" name="birthday">
                             <small class="form-text "></small>
                         </div>
                         <div class="form-group">
                             <label for="address">address</label>
                             <textarea  class="form-control" id="address" name="address" 
-                            cols="30" rows="3"><?= htmlentities($r['address'])?></textarea>
+                            cols="30" rows="3"></textarea>
                             <small class="form-text "></small>
                         </div>
 
