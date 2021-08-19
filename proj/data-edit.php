@@ -167,6 +167,7 @@
                     console.log(obj);
                     if(obj.success){
                         alert('修改成功');
+                        location.href = 'index_.php';
                     } else {
                         alert(obj.error);
                     }
