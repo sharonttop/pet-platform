@@ -35,13 +35,6 @@ if(empty($m)){
     exit;
  }
 
-
-// if(! password_verify($_POST['password'], password_hash($m['password'], PASSWORD_DEFAULT) )){
-//     $output['error'] = '密碼錯誤' ;
-//     $output['code'] = 405 ;
-//     echo json_encode($output, JSON_UNESCAPED_UNICODE);
-//     exit;
-// }
 if(! ($_POST['password'] == $m['password'])){
     $output['error'] = '密碼錯誤' ;
     $output['code'] = 405 ;
@@ -51,8 +44,6 @@ if(! ($_POST['password'] == $m['password'])){
 
 $output['success'] = true;
 $output['code'] = 200;
-// $output['password'] = $_POST['password'];
-// $output['varify_password'] = password_verify($_POST['password'], $m['password']);
 $_SESSION['user'] = $m;
 
 echo json_encode($output, JSON_UNESCAPED_UNICODE);

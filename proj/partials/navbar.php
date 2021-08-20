@@ -7,14 +7,7 @@
 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- 要做樹狀圖 ---------------------------->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">寵物媒合</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">寵物店商</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="customers-list.php">客戶資料</a>
                 </li>
@@ -30,11 +23,11 @@
                         <a class="nav-link" ><?= $_SESSION['user']['nickname'] ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="data-edit.php">編輯個人資料</a>
+                        <a class="nav-link" href="member-edit.php">編輯個人資料</a>
                     </li>
                     <li class="nav-item">
                        <?php if(! empty( $_SESSION['user']['avatar'])): ?>
-                            <img src="imgs/<?= $_SESSION['user']['avatar'] ?>" alt="" width="50px">
+                            <img src="imgs/<?= $_SESSION['user']['avatar'] ?>" alt="" width="50px" style="border-radius:50%">
                         <?php endif; ?>
                     </li>
 
@@ -46,7 +39,7 @@
                         <a class="nav-link" href="login.php">登入</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="data-insert.php">註冊</a>
+                        <a class="nav-link" href="member-insert.php">註冊</a>
                     </li>
                 <?php endif; ?>
             </ul>

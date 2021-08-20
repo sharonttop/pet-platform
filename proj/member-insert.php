@@ -148,8 +148,8 @@
 
 
         if(isPass){
-            const fd = new FormData(document.form1);
-            fetch('data-insert-api.php', {
+            const fd = new Formmember(document.form1);
+            fetch('member-insert-api.php', {
                 method: 'POST',
                 body: fd
             })

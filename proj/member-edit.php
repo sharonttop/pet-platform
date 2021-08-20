@@ -158,7 +158,7 @@
 
         if(isPass){
             const fd = new FormData(document.form1);
-            fetch('data-edit-api.php', {
+            fetch('member-edit-api.php', {
                 method: 'POST',
                 body: fd
             })
