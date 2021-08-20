@@ -71,50 +71,54 @@
             /* 可以點的樣子ˋ */
 
         }
+
     </style>
 <div class="container">
-    <div class="row" >
-        <div class="col">
-            <form action="customers-list.php" class="form-inline my-2 my-lg-0 d-flex justify-content-end">
-                <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Search"
-                       value="<?= htmlentities($keyword) ?>"
-                       aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
     <div class="row">
         <div class="col">
             <nav aria-label="Page navigation example">
-                <ul class="pagination d-flex justify-content-end">
+                <ul class="pagination d-flex justify-content-between mt-3">
+                    <form action="customers-list.php" class="form-inline my-2 my-lg-0 d-flex">
+                        <div class="add-new">
+                            <li class="nav-item d-flex">
+                                
+                                <h3><i class="fas fa-user-plus"></i></h3>
+                                <a class="nav-link" href="customer-insert.php">新增</a>
+                            </li>
+                        </div>
+                        <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Search"
+                            value="<?= htmlentities($keyword) ?>"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
 
-                    <li class="page-item <?= $page<=1 ? 'disabled' : '' ?>">
-                        <a class="page-link" href="?<?php
-                        $qs['page']=$page-1;
-                        echo http_build_query($qs);
-                        ?>">
-                            <i class="fas fa-arrow-circle-left"></i>
-                        </a>
-                    </li>
-
-                    <?php for($i=$page-5; $i<=$page+5; $i++):
-                        if($i>=1 and $i<=$totalPages):
-                            $qs['page'] = $i;
-                            ?>
-                    <li class="page-item <?= $i==$page ? 'active' : '' ?>">
-                        <a class="page-link" href="?<?= http_build_query($qs) ?>"><?= $i ?></a>
-                    </li>
-                    <?php endif;
-                        endfor; ?>
-
-                    <li class="page-item <?= $page>=$totalPages ? 'disabled' : '' ?>">
-                        <a class="page-link" href="?<?php
-                        $qs['page']=$page+1;
-                        echo http_build_query($qs);
-                        ?>">
-                            <i class="fas fa-arrow-circle-right"></i>
-                        </a>
-                    </li>
+                    <div class="all-page d-flex">
+                        <li class="page-item <?= $page<=1 ? 'disabled' : '' ?>">
+                            <a class="page-link" href="?<?php
+                            $qs['page']=$page-1;
+                            echo http_build_query($qs);
+                            ?>">
+                                <i class="fas fa-arrow-circle-left"></i>
+                            </a>
+                        </li>
+                        <?php for($i=$page-5; $i<=$page+5; $i++):
+                            if($i>=1 and $i<=$totalPages):
+                                $qs['page'] = $i;
+                                ?>
+                        <li class="page-item <?= $i==$page ? 'active' : '' ?>">
+                            <a class="page-link" href="?<?= http_build_query($qs) ?>"><?= $i ?></a>
+                        </li>
+                        <?php endif;
+                            endfor; ?>
+                        <li class="page-item <?= $page>=$totalPages ? 'disabled' : '' ?>">
+                            <a class="page-link" href="?<?php
+                            $qs['page']=$page+1;
+                            echo http_build_query($qs);
+                            ?>">
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
 

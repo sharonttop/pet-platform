@@ -16,7 +16,7 @@ $title = '登入';
 
 <div class="container">
 
-    <div class="col-md-6">
+    <div class="col-md-6 mt-4">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">登入</h5>

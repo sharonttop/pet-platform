@@ -33,7 +33,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 mt-4">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">修改資料</h5>

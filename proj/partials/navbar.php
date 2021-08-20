@@ -6,13 +6,10 @@
     </button>
 
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="customers-list.php">客戶資料</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="customer-insert.php">新增</a>
                 </li>
             </ul>
 
