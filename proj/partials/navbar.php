@@ -19,7 +19,8 @@
                     <li class="nav-item active">
                         <a class="nav-link" ><?= $_SESSION['user']['nickname'] ?></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
+                        <h4><i class="fas fa-user-edit"></i></h4>
                         <a class="nav-link" href="member-edit.php">編輯個人資料</a>
                     </li>
                     <li class="nav-item">

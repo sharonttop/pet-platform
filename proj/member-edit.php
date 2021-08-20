@@ -36,7 +36,10 @@
         <div class="col-md-6 mt-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">修改資料</h5>
+                    <div class="d-flex">
+                        <h5><i class="fas fa-user-edit"></i></h5>
+                        <h5 class="card-title">修改資料</h5>
+                    </div>
 
                     <form name="form1" onsubmit="checkForm(); return false;">
                         <div class="form-group">
