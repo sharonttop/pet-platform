@@ -90,6 +90,7 @@ if(! empty($ext)){
                     $_POST['birthday'],
                     $_POST['address'],
                 ]);
+                
 
                 $output['rowCount'] = $stmt->rowCount(); // 新增的筆數
                 if($stmt->rowCount()==1){
